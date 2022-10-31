@@ -1,6 +1,10 @@
 import React, { Fragment, useState, useRef, useEffect } from "react";
 import { v4 as uuidv4 } from 'uuid'
 import { TodoList } from './componests/TodoList';
+import './componests/styles/card.css';
+import './componests/styles/center.css';
+import './componests/styles/noti.css';
+
 
 const KEY = "todoApp.todos";
 
@@ -46,13 +50,17 @@ export function App() {
     }
 
     return (
-        <Fragment>
+        <Fragment >
             <TodoList todos={todos} toggleTodo={toggleTodo} />
-            <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
-            <button onClick={handleTodoAdd}> ➕ </button>
-            <button onClick={handleClearAll}> 🗑</button>
-            <div>Te quedan {todos.filter((todo) => !todo.completed).length} tareas por terminar</div>
+            <div class="center" > <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea" />
+                <button onClick={handleTodoAdd} > ➕ </button>
+                <button onClick={handleClearAll}> 🗑</button></div>
+
+            <div class="noti">Te quedan <p> {todos.filter((todo) => !todo.completed).length} </p> tareas por terminar</div>
+
         </Fragment>
+
+
 
     );
 

@@ -1,0 +1,8 @@
+.center{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: 3px;
+    padding: 15px;
+}

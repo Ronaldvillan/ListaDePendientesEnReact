@@ -6,7 +6,7 @@ export function TodoItem({ todo, toggleTodo }) {
     const handleTodoClick = () => {
         toggleTodo(id);
     }
-    return <li>
+    return<li class="card">
         <input type="checkbox" checked={completed} onChange={handleTodoClick} />
         {task}
     </li>

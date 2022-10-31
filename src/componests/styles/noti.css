@@ -1,0 +1,20 @@
+.noti {
+  background-color: black;
+  color: white;
+  width: auto;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-family: monospace, serif;
+}
+
+.noti p {
+  color: red;
+  margin: 6px;
+  font-size: 40px;
+}
