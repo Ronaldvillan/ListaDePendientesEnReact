@@ -1,8 +1,83 @@
-.center{
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+.center {
     background-color: black;
     display: flex;
-    justify-content: center;
-    width: auto;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    width: auto; /* Puedes dejar esto como está */
     margin: 3px;
     padding: 15px;
 }
+
+.center h2 {
+    font-size: 38px; /* Tamaño de fuente aumentado */
+    text-align: center; /* Centrar texto horizontalmente */
+    margin-bottom: 25px; /* Espacio debajo del título */
+    line-height: 1.5; /* Ajusta el alto de línea para centrar verticalmente */
+    color: #D32F2F; /* Color del texto */
+    font-family: 'Baloo 2', sans-serif; /* Aplica Baloo 2 */
+    font-weight: 600;
+    text-transform: capitalize; /* Solo la primera letra en mayúscula */
+}
+
+.input-container {
+    display: flex; /* Cambiar a flex para alinear input y botones */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente */
+    width: 100%; /* Hacer que el contenedor ocupe el ancho completo */
+}
+
+.center input {
+    width: 40%; /* Reducido a 40% para que no sea tan ancho */
+    padding: 12px; /* Aumentar el padding dentro del input */
+    font-size: 18px; /* Ajustar el tamaño de la fuente */
+    margin-right: 10px; /* Espacio a la derecha para los botones */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 2px solid #FF6347; /* Borde de color */
+    background-color: #2c2c2c; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.center input:focus {
+    outline: none;
+    border-color: #FF6347; /* Color de borde al hacer foco */
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* Sombra al hacer foco */
+}
+
+.center button {
+    padding: 12px 20px; /* Ajustar tamaño de los botones */
+    font-size: 18px; /* Aumentar tamaño de fuente para botones */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    width: 80px; /* Establecer un ancho fijo para los botones */
+    margin-left: 10px; /* Espacio entre los botones */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #FF6347; /* Color de fondo para los botones */
+    color: white; /* Texto blanco */
+    border: none; /* Eliminar borde predeterminado */
+    transition: all 0.3s ease; /* Transición suave para los efectos */
+}
+
+.center button:hover {
+    background-color: #FF4500; /* Color de fondo en hover */
+    transform: scale(1.05); /* Efecto de aumento del tamaño */
+}
+
+.center button:active {
+    background-color: #FF6347; /* Color de fondo al hacer clic */
+    transform: scale(0.98); /* Efecto de presión */
+}
+.todo-index {
+    color: #FF6347; /* El color que desees para el índice */
+}
+
+.no-tasks-message {
+    text-align: center;
+    font-size: 35px;
+    color:white; /* O el color que prefieras */
+    font-family: 'Baloo 2', sans-serif;
+    margin-top: 30px;
+    padding: 10px;
+}
+

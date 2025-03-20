@@ -1,11 +1,60 @@
 .card {
   background-color: black;
   color: white;
-  width: 100%;
-  margin: 2px;
-  padding: 3px;
-  font-size: 17px;
-  font-family: monospace, serif;
-  
+  width: 80%;
+  margin: 2px auto;
+  padding: 10px;
+  font-size: 20px;
 }
 
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card li {
+  padding: 5px;
+  border-bottom: 1px solid white; /* Esta línea es opcional, se puede ocultar cuando no haya tareas */
+}
+
+.card li:last-child {
+  border-bottom: none; /* Elimina la línea en el último elemento */
+}
+
+.card li input[type="checkbox"] {
+  transform: scale(1);
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #FF6347;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  vertical-align: middle;
+}
+
+.card li input[type="checkbox"]:checked {
+  background-color: #FF6347;
+  border-color: #FF6347;
+}
+
+.card li input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.no-tasks-message {
+  text-align: center;
+  font-size: 18px;
+  color: #FF6347;
+  font-family: 'Baloo 2', sans-serif;
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 40px; /* Más espacio debajo del mensaje */
+}

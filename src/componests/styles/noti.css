@@ -1,20 +1,29 @@
 .noti {
   background-color: black;
   color: white;
-  width: auto;
-  height: 50px;
-  margin: 5px;
-  padding: 5px;
-
+  width: 100%; /* Asegúrate de que ocupe todo el ancho */
+  height: 180px; /* Aumentado para dar más espacio */
+  padding: 20px; /* Aumentado para mayor espacio */
+  position: fixed; /* Fijar en la parte inferior */
+  bottom: 0; /* Ubicar en la parte inferior */
+  left: 0; /* Asegurarse de que esté alineado a la izquierda */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 17px;
-  font-family: monospace, serif;
+  font-size: 26px; /* Aumentado para mejor visibilidad */
+  font-family: 'Baloo 2', sans-serif; /* Mantenemos la fuente del resto del proyecto */
+  z-index: 1000; /* Asegúrate de que esté por encima de otras secciones */
 }
 
 .noti p {
-  color: red;
+  color: #FF6347; /* Rojo del resto del proyecto */
   margin: 6px;
-  font-size: 40px;
+  font-size: 80px; /* Aumentado para hacerlo más visible */
+  font-weight: bold; /* Resaltado el número */
+}
+
+.noti span {
+  color: white; /* El resto del texto en blanco */
+  font-size: 26px; /* Ajustado el tamaño del texto */
+  font-weight: normal; /* Normal para el texto */
 }
