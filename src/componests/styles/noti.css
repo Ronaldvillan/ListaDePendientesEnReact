@@ -1,3 +1,4 @@
+/* Estilo base para la notificación */
 .noti {
   background-color: black;
   color: white;
@@ -26,4 +27,22 @@
   color: white; /* El resto del texto en blanco */
   font-size: 26px; /* Ajustado el tamaño del texto */
   font-weight: normal; /* Normal para el texto */
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .noti {
+    height: 120px; /* Reducir la altura en dispositivos móviles */
+    padding: 10px; /* Reducir el espacio alrededor */
+    font-size: 18px; /* Reducir el tamaño de la fuente */
+  }
+
+  .noti p {
+    font-size: 40px; /* Reducir el tamaño de la fuente del mensaje */
+    margin: 5px; /* Reducir el margen para que no quede tan alejado */
+  }
+
+  .noti span {
+    font-size: 16px; /* Reducir el tamaño del texto adicional */
+  }
 }

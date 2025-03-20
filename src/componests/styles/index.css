@@ -29,6 +29,25 @@ body {
         max-width: 100%; /* Hacer que las imágenes no se desborden */
         height: auto;
     }
+
+    /* Estilo para input y botones */
+    .input-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input-container input {
+        width: 80%; /* Input ocupa el 80% del ancho */
+        padding: 10px;
+        margin-right: 10px; /* Espacio entre el input y los botones */
+    }
+
+    .input-container button {
+        width: 15%; /* Botones ocupan el 15% del ancho */
+        padding: 10px;
+        font-size: 14px; /* Botones más pequeños */
+    }
 }
 
 /* Media Queries para pantallas medianas (tabletas y dispositivos de 600px a 1024px) */
@@ -41,10 +60,22 @@ body {
         padding: 20px;
     }
 
-    /* Hacer que los contenedores o elementos se adapten mejor */
-    .some-class {
-        width: 90%;
-        margin: 0 auto;
+    /* Ajustar tamaños en pantallas medianas */
+    .input-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input-container input {
+        width: 70%; /* Ajuste en pantallas medianas */
+        padding: 10px;
+    }
+
+    .input-container button {
+        width: 25%; /* Ajuste en pantallas medianas */
+        padding: 10px;
+        font-size: 16px;
     }
 }
 
